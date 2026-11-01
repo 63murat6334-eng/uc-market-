@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="UC MARKET - PUBG Mobile UC sipariş ve destek sayfası.">
+  <meta name="theme-color" content="#090710">
+  <title>UC MARKET | PUBG Mobile UC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="#anasayfa">UC <span>MAR</span><b>KET</b><small>PUBG MOBILE UC</small></a>
+    <nav><a href="#paketler">UC Paketleri</a><a href="#siparis">Sipariş</a><a href="#guven">Bilgilendirme</a></nav>
+    <a class="login" href="#siparis">Sipariş ver</a>
+  </header>
+
+  <main>
+    <section class="hero" id="anasayfa">
+      <div class="hero-copy">
+        <p class="eyebrow">UC MARKET • TÜRKİYE</p>
+        <h1>Oyunun için<br><em>UC zamanı.</em></h1>
+        <p>PUBG Mobile UC sipariş talebini kolayca oluştur. Paketini seç, oyuncu bilgilerini gir ve WhatsApp üzerinden bizimle iletişime geç.</p>
+        <a class="btn" href="#paketler">Paketleri incele</a>
+        <div class="trust"><span>✓ Kolay sipariş talebi</span><span>✓ WhatsApp destek</span><span>✓ Açık fiyat bilgilendirmesi</span></div>
+      </div>
+      <div class="orb"><div class="coin">UC</div><span>UC MARKET</span></div>
+    </section>
+
+    <section class="section" id="paketler">
+      <div class="section-head">
+        <div><p class="eyebrow">SENİN PAKETİNİ SEÇ</p><h2>UC Paketleri</h2><p class="muted">Fiyatlar yayın öncesi satıcı tarafından girilmelidir.</p></div>
+      </div>
+      <div class="products">
+        <article class="product"><div class="gem">◆</div><h3>60 UC</h3><p class="muted">Başlangıç paketi</p><div class="price">Fiyat sorunuz</div><button class="btn choose" data-package="60 UC">Bu paketi seç</button></article>
+        <article class="product"><div class="gem">◆</div><h3>325 UC</h3><p class="muted">Popüler paket</p><div class="price">Fiyat sorunuz</div><button class="btn choose" data-package="325 UC">Bu paketi seç</button></article>
+        <article class="product"><div class="gem">◆</div><h3>660 UC</h3><p class="muted">Avantajlı paket</p><div class="price">Fiyat sorunuz</div><button class="btn choose" data-package="660 UC">Bu paketi seç</button></article>
+        <article class="product"><div class="gem">◆</div><h3>1800 UC</h3><p class="muted">Büyük paket</p><div class="price">Fiyat sorunuz</div><button class="btn choose" data-package="1800 UC">Bu paketi seç</button></article>
+        <article class="product"><div class="gem">◆</div><h3>3850 UC</h3><p class="muted">Büyük paket</p><div class="price">Fiyat sorunuz</div><button class="btn choose" data-package="3850 UC">Bu paketi seç</button></article>
+        <article class="product"><div class="gem">◆</div><h3>8100 UC</h3><p class="muted">En büyük paket</p><div class="price">Fiyat sorunuz</div><button class="btn choose" data-package="8100 UC">Bu paketi seç</button></article>
+      </div>
+    </section>
+
+    <section class="order-wrap" id="siparis">
+      <div class="order">
+        <p class="eyebrow">HIZLI TALEP</p><h2>Sipariş oluştur</h2>
+        <p class="muted">Bilgilerini doldur. WhatsApp mesajı hazırlanacak; gönder tuşuna basmadan önce bilgileri kontrol et.</p>
+        <form id="orderForm">
+          <label>Seçtiğin UC paketi
+            <select id="package" required>
+              <option value="">Paket seç</option><option>60 UC</option><option>325 UC</option><option>660 UC</option><option>1800 UC</option><option>3850 UC</option><option>8100 UC</option>
+            </select>
+          </label>
+          <label>Oyuncu ID
+            <input id="playerId" inputmode="numeric" placeholder="PUBG Mobile oyuncu ID" required>
+          </label>
+          <label>İletişim adın
+            <input id="customerName" autocomplete="name" placeholder="Adın" required>
+          </label>
+          <label>Not (isteğe bağlı)
+            <textarea id="note" rows="3" placeholder="Varsa sipariş notun"></textarea>
+          </label>
+          <button class="btn full" type="submit">WhatsApp ile sipariş talebi gönder</button>
+          <p id="result" role="status"></p>
+        </form>
+      </div>
+      <aside class="side" id="guven">
+        <h2>Önemli bilgiler</h2>
+        <p>Bu sayfa sipariş talebi toplamak için hazırlanmış bir örnek vitrindir. Ödeme altyapısı veya otomatik UC teslimatı içermez.</p>
+        <p>Yayınlamadan önce WhatsApp numaranı, gerçek satış fiyatlarını ve teslimat koşullarını eklemelisin. Yalnızca yetkili ve yasal tedarik kanallarını kullan.</p>
+        <div class="support">Destek<br><small>WhatsApp numarası site sahibince eklenecek.</small></div>
+      </aside>
+    </section>
+  </main>
+
+  <footer><strong>UC MARKET</strong><span>Bağımsız satış sayfası • PUBG MOBILE ile bağlantılı veya resmî değildir.</span><span>© <span id="year"></span> UC MARKET</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
