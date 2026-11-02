@@ -1,6 +1,6 @@
 // YAYINLAMADAN ÖNCE aşağıdaki numarayı kendi WhatsApp numaranla değiştir.
 // Ülke kodu dahil, + işareti ve boşluk olmadan yaz. Örnek biçim: 905xxxxxxxxx
-const WHATSAPP_NUMBER = "90XXXXXXXXXX";
+const WHATSAPP_NUMBER = "905300659034";
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
