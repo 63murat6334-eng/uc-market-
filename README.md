@@ -1,2 +1,2 @@
 # UC-NOVA-
-UC MARKET PUBG UC satış sitesi
+UC NOVA PUBG UC satış sitesi
